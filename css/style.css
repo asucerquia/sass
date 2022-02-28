@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Staatliches&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Comienza el header */
+
+#header {
+    background: #f7f2ed;
+}
+
+.navbar {
+    background: #f7f2ed !important;
+    font-family: 'Staatliches';
+    font-size: 20px;
+}
+
+#header img {
+    width: 150px;
+}
+
+#rotador {
+    background: #2D2D28;
+    padding-bottom: 100px;
+    background-image: url("../img/textura2.png");
+    overflow: hidden;
+}
+
+.cont-imagenes img {
+    width: 80%;
+    transform: rotate(346deg);
+}
+
+#rotador .titulo {
+    font-size: 6vw;
+    color: #fbdf83;
+    text-shadow: 0px 0px 7px #fbdf83;
+    font-family: 'Staatliches';
+}
+
+#rotador .subtitulo {
+    font-size: 2vw;
+    color: #fbdf83;
+    text-shadow: 0px 0px 7px #fbdf83;
+    font-family: 'Staatliches';
+    margin-top: -30px;
+}
+
+
+/* Animacion de la imagen */
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#rota {
+    width: 970px;
+    animation: spin 175s linear infinite;
+    position: absolute;
+    right: 230px;
+    animation: spin 175s linear infinite;
+}
+
+
+/* fin Animacion de la imagen */
+
+.cont-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    background: #2D2D28;
+    color: white;
+    padding-bottom: 100px
+}
+
+#main h2 {
+    font-family: 'Staatliches';
+    font-size: 80px;
+    color: #fdfef5;
+    display: inline-block;
+}
+
+#main p {
+    font-family: 'Staatliches';
+    font-size: 25px;
+    color: #fbdf83;
+    margin-bottom: 30px;
+}
+
+.cont-row {
+    display: flex;
+    align-items: center;
+}
+
+.cont-img {
+    width: auto;
+}
+
+.cont-img img {
+    object-fit: cover;
+}
+
+#footer {
+    background: #2D2D28;
+    color: #fbdf83;
+    background-image: url("../img/textura2.png");
+    display: flex;
+    justify-content: center;
+    font-family: 'Staatliches';
+    list-style: none;
+    padding: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* este es el responsive */
+
+@media screen and (max-width: 1300px) {
+    #rotador .titulo {
+        font-size: 11vw;
+        color: #fbdf83;
+        text-shadow: 0px 0px 7px #fbdf83;
+        font-family: 'Staatliches';
+    }
+    #rotador .subtitulo {
+        font-size: 6vw;
+        color: #fbdf83;
+        text-shadow: 0px 0px 7px #fbdf83;
+        font-family: 'Staatliches';
+        margin-top: -30px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #rotador .titulo {
+        font-size: 21vw;
+        color: #fbdf83;
+        text-shadow: 0px 0px 7px #fbdf83;
+        font-family: 'Staatliches';
+    }
+    #rotador .subtitulo {
+        font-size: 9vw;
+        color: #fbdf83;
+        text-shadow: 0px 0px 7px #fbdf83;
+        font-family: 'Staatliches';
+        margin-top: -30px;
+    }
+}
